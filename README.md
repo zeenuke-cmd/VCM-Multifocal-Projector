@@ -23,7 +23,7 @@ ATmega128의 VCM 제어 코드, Raspberry Pi의 통합 UI, 자동초점 알고�
 
 ## 2. 시스템 구성
 
-![Raspberry Pi와 ATmega128 기반 다중초점 프로젝터 구성도](system_architecture.png)
+![Raspberry Pi와 ATmega128 기반 다중초점 프로젝터 구성도](results/system_architecture.png)
 
 Raspberry Pi 5는 카메라 영상 분석과 웹 UI, DLP 영상 출력을 맡고, ATmega128은 Hall 센서 값을 받아 VCM 렌즈의 위치를 제어합니다. 두 장치는 UART로 목표 ADC를 주고받으며, GPIO17 신호로 앞뒤 초점 전환을 맞춥니다. 렌즈 위치가 정해지면 정착 상태를 확인한 뒤 다음 초점 측정으로 넘어갑니다.
 
